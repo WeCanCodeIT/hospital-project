@@ -1,5 +1,5 @@
 
-public class Nurse extends Employee implements CareForPatient {
+public class Nurse extends Employee implements CaresForPatient {
 	
 	private int numberOfPatients;
 
@@ -11,7 +11,8 @@ public class Nurse extends Employee implements CareForPatient {
 	public int getNumberOfPatients() {
 		return numberOfPatients;
 	}
-	
+
+	@Override
 	public void careForPatient(Patient patient) {
 		patient.heal(5);
 	}

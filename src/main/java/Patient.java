@@ -25,5 +25,9 @@ public class Patient {
 	public void heal(int amountToHeal) {
 		healthLevel += amountToHeal;
 	}
+
+	public void bleed(int amountOfBlood) {
+		bloodLevel -= amountOfBlood;
+	}
 	
 }

@@ -26,4 +26,15 @@ public class DoctorTest {
 		
 		assertThat(doctorSalary, is(equalTo(90000)));
 	}
+	
+	@Test
+	public void drawBloodShouldDecreasePatientBloodLevel() {
+		Patient patient = new Patient();
+		int patientBloodLevelBeforeDrawing = patient.getBloodLevel();
+		
+		phil.drawBlood(patient);
+		int patientBloodLevelAfterDrawing = patient.getBloodLevel();
+		
+		assertThat(patientBloodLevelAfterDrawing, is(equalTo(patientBloodLevelBeforeDrawing - 10)));
+	}
 }
