@@ -22,6 +22,11 @@ public abstract class Employee {
 	public int calculatePay() {
 		return salary;
 	}
+
+	@Override
+	public String toString() {
+		return name + " " + employeeNumber + " " + salary;
+	}
 	
 	
 }

@@ -9,7 +9,7 @@ public class DoctorTest {
 	@Test
 	public void careForPatientShouldIncreasePatientHealth() {
 		// Arrange
-		Patient patient = new Patient(25, 25);
+		Patient patient = new Patient("Patient 0", "1111", 25, 25);
 		int patientHealthBeforeCare = patient.getHealthLevel();
 		
 		// Act
@@ -29,7 +29,7 @@ public class DoctorTest {
 	
 	@Test
 	public void drawBloodShouldDecreasePatientBloodLevel() {
-		Patient patient = new Patient();
+		Patient patient = new Patient("Patient 0", "1111", 25, 25);
 		int patientBloodLevelBeforeDrawing = patient.getBloodLevel();
 		
 		phil.drawBlood(patient);

@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class PatientTest {
 	
-	Patient patient = new Patient();
+	Patient patient = new Patient("Patient 0", "1111", 25, 25);
 
 	@Test
 	public void healShouldIncreasePatientHealth() {

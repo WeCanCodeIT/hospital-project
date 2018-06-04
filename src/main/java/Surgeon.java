@@ -15,6 +15,12 @@ public class Surgeon extends Doctor {
 	public void toggleOperating() {
 		isOperating = !isOperating;
 	}
+
+	@Override
+	public String toString() {
+
+		return "Surgeon: " + getName() + " " + getEmployeeNumber() + " " + calculatePay() + " " + getSpecialty();
+	}
 	
 	
 

@@ -22,4 +22,9 @@ public class Doctor extends Employee implements CaresForPatient, GetsBlood {
 		patient.bleed(10);
 	}
 
+	@Override
+	public String toString() {
+		return "Doctor: " +getName() + " " + getEmployeeNumber() + " " + calculatePay();
+	}
+
 }
